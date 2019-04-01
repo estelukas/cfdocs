@@ -17,5 +17,13 @@
 		"railo": {"minimum_version":"", "notes":"", "docs":"http://railodocs.org/index.cfm/function/toscript"},
 		"openbd": {"minimum_version":"", "notes":"", "docs":"http://openbd.org/manual/?/function/toscript"}
 	},
-	"links": []
+	"links": [],
+	
+	"examples": [
+		{
+	            "title": "Simple Tag Example",
+	            "description": "",
+	            "code": "<cfset cfVar = "Variable CF" /> <cfoutput><script type="text/javascript" language="JavaScript"> var #ToScript(cfVar, "jsVar")#; </script> </cfoutput> <script type="text/javascript" > alert("Variable de javaScript = " + jsVar) </script>",
+	            "result": ""}
+	]
 }
